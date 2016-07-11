@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D87473CF-398E-431E-8708-19E8ABA3E88C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Electro</RootNamespace>
+    <AssemblyName>Electro</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvancedSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdvancedSearch.Designer.cs">
+      <DependentUpon>AdvancedSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyDAC.cs" />
+    <Compile Include="ConnectionManager.cs" />
+    <Compile Include="Database1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExamResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExamResults.Designer.cs">
+      <DependentUpon>ExamResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeeReceived.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeeReceived.Designer.cs">
+      <DependentUpon>FeeReceived.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HiddenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HiddenForm.Designer.cs">
+      <DependentUpon>HiddenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdvancedSearch.resx">
+      <DependentUpon>AdvancedSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamResults.resx">
+      <DependentUpon>ExamResults.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeeReceived.resx">
+      <DependentUpon>FeeReceived.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HiddenForm.resx">
+      <DependentUpon>HiddenForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignedIn.resx">
+      <DependentUpon>SignedIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignedIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignedIn.Designer.cs">
+      <DependentUpon>SignedIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn.Designer.cs">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="Icon1.ico" />
+    <Content Include="Images\Buttons\Add.jpg" />
+    <Content Include="Images\Buttons\Back.jpg" />
+    <Content Include="Images\Buttons\Close%28Large%29.jpg" />
+    <Content Include="Images\Buttons\Close.jpg" />
+    <Content Include="Images\Buttons\DownArrow.jpg" />
+    <Content Include="Images\Buttons\ExamResults.jpg" />
+    <Content Include="Images\Buttons\ExamResultsOpen.jpg" />
+    <Content Include="Images\Buttons\Exit.jpg" />
+    <Content Include="Images\Buttons\FeeReceived.jpg" />
+    <Content Include="Images\Buttons\FeeReceivedOpen.jpg" />
+    <Content Include="Images\Buttons\Go.jpg" />
+    <Content Include="Images\Buttons\Minimize.jpg" />
+    <Content Include="Images\Buttons\More.jpg" />
+    <Content Include="Images\Buttons\NewStudent.jpg" />
+    <Content Include="Images\Buttons\NewStudentOpen.jpg" />
+    <Content Include="Images\Buttons\SearchCourses%28Dark%29.jpg" />
+    <Content Include="Images\Buttons\SearchCourses.jpg" />
+    <Content Include="Images\Buttons\SearchDOB%28Dark%29.jpg" />
+    <Content Include="Images\Buttons\SearchDOB.jpg" />
+    <Content Include="Images\Buttons\SearchDOR%28Dark%29.jpg" />
+    <Content Include="Images\Buttons\SearchDOR.jpg" />
+    <Content Include="Images\Buttons\Searchemail%28Dark%29.jpg" />
+    <Content Include="Images\Buttons\Searchemail.jpg" />
+    <Content Include="Images\Buttons\SearchFullname%28Dark%29.jpg" />
+    <Content Include="Images\Buttons\SearchFullname.jpg" />
+    <Content Include="Images\Buttons\SearchOptions.jpg" />
+    <Content Include="Images\Buttons\SearchOptionsOpen.jpg" />
+    <Content Include="Images\Forms\AdvancedSearch.jpg" />
+    <Content Include="Images\Forms\Search.jpg" />
+    <Content Include="Images\Forms\Register.jpg" />
+    <Content Include="Images\Forms\Payments.jpg" />
+    <Content Include="Images\Forms\ExamResults.jpg" />
+    <Content Include="Images\Forms\SignedIn.jpg" />
+    <Content Include="Images\Forms\SignIn.jpg" />
+    <Content Include="Images\Forms\WelcomeForm.jpg" />
+    <Content Include="Images\Panels\AdvancedSearch-Panel1.jpg" />
+    <Content Include="Images\Panels\FeeReceived-Panel1.jpg" />
+    <Content Include="Images\Panels\FeeReceived-Panel3.jpg" />
+    <Content Include="Images\Panels\FeeReceived-Panel2.jpg" />
+    <Content Include="Images\Panels\ExamResults-Panel1.jpg" />
+    <Content Include="Images\Panels\ExamResults-Panel2.jpg" />
+    <Content Include="Images\Panels\ExamResults-Panel3.jpg" />
+    <Content Include="Images\Panels\Regiter-Panel1.jpg" />
+    <Content Include="Images\Panels\Register-Panel2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.9.2">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition SP2 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
